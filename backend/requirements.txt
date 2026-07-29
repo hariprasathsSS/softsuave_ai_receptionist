@@ -1,0 +1,56 @@
+# ── Phase 1 dependencies ──────────────────────────────────────────────────
+# Core
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic-settings>=2.5.0
+
+# AI / LLM
+openai>=1.55.0
+
+# STT — Deepgram (v7's AsyncDeepgramClient.listen.v1.connect live API is used
+# for real-time transcription — the 3.x API this was previously pinned to is
+# a different, incompatible shape)
+deepgram-sdk>=7.4.0,<8.0.0
+
+# TTS — ElevenLabs (HTTP streaming, no dedicated SDK needed)
+httpx>=0.28.0
+
+# Telephony — Twilio
+twilio>=9.0.0
+
+# Database — Supabase (PostgreSQL via asyncpg)
+asyncpg>=0.30.0
+sqlalchemy[asyncio]>=2.0.36
+psycopg2-binary>=2.9.0  # sync fallback for Alembic
+
+# Redis
+redis>=5.2.0
+
+# Async task queue
+celery[redis]>=5.4.0
+
+# Auth
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+
+# Object storage
+minio>=7.2.0
+
+# Google APIs
+google-auth>=2.36.0
+google-auth-oauthlib>=1.2.0
+google-api-python-client>=2.153.0
+
+# Encryption
+cryptography>=43.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+python-multipart>=0.0.12
+websockets>=14.0
+
+# ── Testing (dev) ──────────────────────────────────────────────────────────
+pytest>=8.3.0
+pytest-asyncio>=0.24.0
+pytest-cov>=6.0.0
+httpx>=0.28.0

@@ -1,0 +1,9 @@
+"""Unit tests for dialog state machine."""
+
+# To be implemented in Phase 1 alongside the actual DialogStateMachine
+# from application.voice.dialog_state_machine import DialogStateMachine
+
+# class TestDialogStateMachine:
+#     def test_idle_to_greeting_on_greeting_intent(self): ...
+#     def test_idle_to_booking_collection_on_book_intent(self): ...
+#     def test_escalation_after_two_low_confidence(self): ...
