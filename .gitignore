@@ -42,5 +42,5 @@ minio_data/
 *.log
 logs/
 docs/
-frontend/
+
 .claude/
